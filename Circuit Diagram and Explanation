@@ -1,0 +1,6 @@
+Circuit Diagram and Explanation
+Circuit of heartbeat monitor is shown below, which contains arduino uno, heart beat sensor module, reset button and LCD. Arduino controls whole the process of system like reading pulses form Heart beat sensor module, calculating heart rate and sending this data to LCD. We can set the sensitivity of this sensor module by inbuilt potentiometer placed on this module. 
+
+
+
+Heart beat sensor module’s output pin is directly connected to pin 8 of arduino. Vcc and GND are connected to Vcc and GND. A 16x2 LCD is connected with arduino in 4-bit mode. Control pin RS, RW and En are directly connected to arduino pin 12, GND and 11. And data pin D4-D7 is connected to pins 5, 4, 3 and 2 of arduino. And one push button is added for resetting reading and another is used to start the system for reading pulses. When we need to count heart rate, we press start button then arduino start counting pulses and also start counter for five seconds. This start push button is connected to pin 7 and reset push button is connected to pin 6 of arduino with respect to ground.
